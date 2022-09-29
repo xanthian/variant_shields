@@ -11,11 +11,9 @@ version = project.mod_version
 group = project.maven_group
 
 repositories {
-	// Add repositories to retrieve artifacts from in here.
-	// You should only use this when depending on other mods because
-	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
-	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
-	// for more information about repositories.
+	maven { url = "https://jitpack.io" }
+	maven { url "https://maven.shedaniel.me/" }
+	maven { url "https://maven.terraformersmc.com/releases/" }
 }
 
 dependencies {
@@ -24,14 +22,23 @@ dependencies {
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	// Fabric API. This is technically optional, but you probably want it anyway.
+	// Fapi
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-
-	// Uncomment the following line to enable the deprecated Fabric API modules. 
-	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
-
-	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+	// Fabric Shield Lib
+	modImplementation 'com.github.CrimsonDawn45:Fabric-Shield-Lib:v1.6.1-pre1-1.19'
+	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}") {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	include("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_version}")
+	modCompileOnly modRuntimeOnly ("com.terraformersmc:modmenu:${project.mod_menu_version}"), {
+		exclude(group: "net.fabricmc.fabric-api")
+	}
+	modImplementation("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}") {
+		exclude (group: "net.fabricmc.fabric-api")
+	}
+	include("com.github.Chocohead:Fabric-ASM:v${project.fabric_asm_version}")
 }
+
 
 processResources {
 	inputs.property "version", project.version
