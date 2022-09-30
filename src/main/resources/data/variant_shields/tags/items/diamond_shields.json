@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "variant_shields:acacia_diamond_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:birch_diamond_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:crimson_diamond_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:dark_oak_diamond_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:jungle_diamond_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:oak_diamond_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:mangrove_diamond_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:warped_diamond_shield",
+      "required": false
+    }
+  ]
+}

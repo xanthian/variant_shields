@@ -1,31 +1,33 @@
 package net.xanthian.variant_shields.materials;
 
-import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.tag.ItemTags;
+import net.minecraft.tag.TagKey;
+import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 import java.util.function.Supplier;
 
 public enum ModShieldMaterial implements ModShieldTiers {
 
-    //Vanilla
-    WOOD(59, 15,100, () -> Ingredient.fromTag(ItemTags.PLANKS)),
-    STONE( 131, 5,100, () -> Ingredient.fromTag(ItemTags.STONE_TOOL_MATERIALS)),
-    IRON(250, 14, 90,() -> Ingredient.ofItems(Items.IRON_INGOT)),
-    DIAMOND(1561, 10,75, () -> Ingredient.ofItems(Items.DIAMOND)),
-    GOLD(32, 22, 110,() -> Ingredient.ofItems(Items.GOLD_INGOT)),
-    NETHERITE(2031, 15,50, () -> Ingredient.ofItems(Items.NETHERITE_INGOT)),
+    // dura based on tool material figures e.g. base iron tool is 250, base shield is 336 = base * 1.34, all values are *1.34 for fair spread
+    // DURABILITY > ENCHANTABILITY > COOLDOWN > REPAIR MATERIAL
+    WOOD(79, 16,120, () ->
+            Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("variant_shields", "wood_shields")))),
 
-    // Mod
-    ACACIA(59, 15,100, () -> Ingredient.ofItems(Items.ACACIA_PLANKS)),
-    BIRCH(59, 15,100, () -> Ingredient.ofItems(Items.BIRCH_PLANKS)),
-    CRIMSON(59, 15,100, () -> Ingredient.ofItems(Items.CRIMSON_PLANKS)),
-    DARK_OAK(59, 15,100, () -> Ingredient.ofItems(Items.DARK_OAK_PLANKS)),
-    JUNGLE(59, 15,100, () -> Ingredient.ofItems(Items.JUNGLE_PLANKS)),
-    MANGROVE(59, 15,100, () -> Ingredient.ofItems(Items.MANGROVE_PLANKS)),
-    OAK(59, 15,100, () -> Ingredient.ofItems(Items.OAK_PLANKS)),
-    SPRUCE(59, 15,100, () -> Ingredient.ofItems(Items.SPRUCE_PLANKS)),
-    WARPED(59, 15,100, () -> Ingredient.ofItems(Items.WARPED_PLANKS));
+    STONE( 175, 6,120, () ->
+            Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("variant_shields", "stone_shields")))),
+
+    IRON(336, 15, 100,() ->
+            Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("variant_shields", "iron_shields")))),
+
+    DIAMOND(2091, 11,80, () ->
+            Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("variant_shields", "diamond_shields")))),
+
+    GOLD(42, 23, 80,() ->
+            Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("variant_shields", "gold_shields")))),
+
+    NETHERITE(2721, 16,80, () ->
+            Ingredient.fromTag(TagKey.of(Registry.ITEM_KEY, new Identifier("variant_shields", "netherite_shields"))));
 
     private final int itemDurability;
     private final int enchantability;

@@ -1,0 +1,7 @@
+{
+  "parent":"fabricshieldlib:item/fabric_shield_blocking",
+  "textures":{
+    "shield":"variant_shields:item/spruce_gold_shield",
+    "particle":"#shield"
+  }
+}

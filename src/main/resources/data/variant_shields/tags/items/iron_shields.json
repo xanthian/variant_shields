@@ -1,0 +1,37 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "variant_shields:acacia_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:birch_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:crimson_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:dark_oak_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:jungle_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:oak_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:mangrove_shield",
+      "required": false
+    },
+    {
+      "id": "variant_shields:warped_shield",
+      "required": false
+    }
+  ]
+}

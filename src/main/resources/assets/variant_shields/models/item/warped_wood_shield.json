@@ -1,0 +1,15 @@
+{
+  "parent":"fabricshieldlib:item/fabric_shield",
+  "textures":{
+    "shield":"variant_shields:item/warped_wood_shield",
+    "particle":"#shield"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "blocking": 1
+      },
+      "model": "variant_shields:item/warped_wood_shield_blocking"
+    }
+  ]
+}

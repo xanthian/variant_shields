@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:warped_planks"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "WSW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:warped_stone_shield"
+  }
+}

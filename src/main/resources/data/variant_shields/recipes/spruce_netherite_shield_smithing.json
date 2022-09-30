@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+  "base": {
+    "item": "variant_shields:spruce_diamond_shield"
+  },
+  "result": {
+    "item": "variant_shields:spruce_netherite_shield"
+  }
+}

@@ -10,8 +10,8 @@ import net.xanthian.variant_shields.materials.ModShieldTiers;
 public class VariantShieldItem extends FabricShieldItem {
     private final ModShieldTiers tier;
 
-    public VariantShieldItem(int cooldownTicks, ModShieldTiers tier) {
-        super(new FabricItemSettings().maxDamage(tier.getItemDurability()).group(Init.VARIANT_SHIELDS), cooldownTicks, tier.getEnchantabilty());
+    public VariantShieldItem(ModShieldTiers tier) {
+        super(new FabricItemSettings().maxDamage(tier.getItemDurability()).group(Init.VARIANT_SHIELDS), tier.getCooldownTicks(), tier.getEnchantabilty());
         this.tier = tier;
     }
     @Override
@@ -23,8 +23,4 @@ public class VariantShieldItem extends FabricShieldItem {
         return this.tier.getCooldownTicks();
     }
 
-    @Override
-    public boolean displayTooltip() {
-        return false;
-    }
 }

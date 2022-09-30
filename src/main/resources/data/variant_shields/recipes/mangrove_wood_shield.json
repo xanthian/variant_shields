@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:mangrove_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:mangrove_wood_shield"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:jungle_planks"
+    },
+    "G": {
+      "item": "minecraft:gold_ingot"
+    }
+  },
+  "pattern": [
+    "WGW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:jungle_gold_shield"
+  }
+}

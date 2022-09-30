@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:birch_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:birch_wood_shield"
+  }
+}

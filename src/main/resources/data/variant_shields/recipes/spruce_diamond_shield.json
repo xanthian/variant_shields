@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:spruce_planks"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "WDW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:spruce_diamond_shield"
+  }
+}

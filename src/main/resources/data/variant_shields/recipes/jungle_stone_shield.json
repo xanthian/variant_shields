@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:jungle_planks"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  },
+  "pattern": [
+    "WSW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:jungle_stone_shield"
+  }
+}

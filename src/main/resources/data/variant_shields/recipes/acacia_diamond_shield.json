@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:acacia_planks"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "WDW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:acacia_diamond_shield"
+  }
+}

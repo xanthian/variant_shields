@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:mangrove_planks"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "WDW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:mangrove_diamond_shield"
+  }
+}

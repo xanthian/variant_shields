@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "W": {
+      "item": "minecraft:spruce_planks"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "WIW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variant_shields:spruce_shield"
+  }
+}
