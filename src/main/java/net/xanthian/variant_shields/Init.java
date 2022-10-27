@@ -22,8 +22,6 @@ public class Init  implements ModInitializer {
     @Override
     public void onInitialize() {
         Shields.registerShieldItems();
-
         LOGGER.info(MOD_ID + " loaded.");
     }
-
 }
