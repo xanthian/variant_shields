@@ -1,4 +1,5 @@
 {
+  "gui_light": "front",
   "parent":"fabricshieldlib:item/fabric_shield",
   "textures":{
     "shield":"variant_shields:item/crimson_wood_shield",
