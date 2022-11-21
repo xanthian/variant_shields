@@ -25,6 +25,7 @@
     "fabricloader": ">=0.14.9",
     "fabric-api": "*",
     "minecraft": "1.19.2",
-    "java": ">=17"
+    "java": ">=17",
+    "fabricshieldlib" : ">=1.6.0-1.19"
   }
 }
