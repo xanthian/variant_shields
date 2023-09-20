@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.0-SNAPSHOT'
+	id 'fabric-loom' version '1.3-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -12,8 +12,32 @@ group = project.maven_group
 
 repositories {
 	maven { url "https://jitpack.io" }
-	maven { url "https://maven.shedaniel.me/" }
-	maven { url "https://maven.terraformersmc.com/releases/" }
+}
+loom {
+	accessWidenerPath = file("src/main/resources/variantshields.accesswidener")
+	runs {
+		// This adds a new gradle task that runs the datagen API: "gradlew runDatagen"
+		datagen {
+			inherit server
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+			vmArg "-Dfabric-api.datagen.modid=variantshields"
+
+			runDir "build/datagen"
+		}
+	}
+}
+
+// Add the generated resources to the main source set
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+					'src/main/generated'
+			]
+		}
+	}
 }
 
 dependencies {
@@ -24,8 +48,9 @@ dependencies {
 
 	// Fapi
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	// Fabric Shield Lib
-	modImplementation "com.github.CrimsonDawn45:Fabric-Shield-Lib:v${project.fabric_shield_lib_version}"
+
+	include(implementation(annotationProcessor("com.github.llamalad7.mixinextras:mixinextras-fabric:0.2.0-beta.8")))
+
 }
 
 

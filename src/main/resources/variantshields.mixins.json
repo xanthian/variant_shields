@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.xanthian.variantshields.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "BindingCurseEnchantmentMixin",
+    "MobEntityMixin",
+    "PlayerEntityMixin",
+    "RemoveOffHandItemTaskMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

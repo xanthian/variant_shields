@@ -1,0 +1,16 @@
+{
+  "parent": "variantshields:item/variant_shield",
+  "gui_light": "front",
+  "overrides": [
+    {
+      "model": "variantshields:item/crimson_iron_shield_blocking",
+      "predicate": {
+        "blocking": 1
+      }
+    }
+  ],
+  "textures": {
+    "particle": "#shield",
+    "shield": "variantshields:item/crimson_iron_shield"
+  }
+}

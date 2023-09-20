@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:dark_oak_wood_shield"
+  },
+  "show_notification": true
+}

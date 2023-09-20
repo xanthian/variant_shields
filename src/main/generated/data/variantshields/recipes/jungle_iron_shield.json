@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "pattern": [
+    "WIW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:jungle_iron_shield"
+  },
+  "show_notification": true
+}

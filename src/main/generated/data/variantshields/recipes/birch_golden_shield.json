@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "W": {
+      "item": "minecraft:birch_planks"
+    }
+  },
+  "pattern": [
+    "WGW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:birch_golden_shield"
+  },
+  "show_notification": true
+}

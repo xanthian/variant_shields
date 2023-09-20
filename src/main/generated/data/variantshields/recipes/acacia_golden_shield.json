@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "W": {
+      "item": "minecraft:acacia_planks"
+    }
+  },
+  "pattern": [
+    "WGW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:acacia_golden_shield"
+  },
+  "show_notification": true
+}

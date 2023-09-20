@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "variantshields:spruce_stone_shield",
+    "variantshields:dark_oak_stone_shield",
+    "variantshields:mangrove_stone_shield",
+    "variantshields:bamboo_stone_shield",
+    "variantshields:crimson_stone_shield",
+    "variantshields:cherry_stone_shield",
+    "variantshields:jungle_stone_shield",
+    "variantshields:acacia_stone_shield",
+    "variantshields:oak_stone_shield",
+    "variantshields:warped_stone_shield",
+    "variantshields:birch_stone_shield"
+  ]
+}

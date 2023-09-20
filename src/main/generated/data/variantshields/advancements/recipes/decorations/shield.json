@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:shield"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_variant_item": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:shield"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_variant_item",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:shield"
+    ]
+  },
+  "sends_telemetry_event": false
+}

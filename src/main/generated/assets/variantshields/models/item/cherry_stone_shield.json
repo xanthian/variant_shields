@@ -1,0 +1,16 @@
+{
+  "parent": "variantshields:item/variant_shield",
+  "gui_light": "front",
+  "overrides": [
+    {
+      "model": "variantshields:item/cherry_stone_shield_blocking",
+      "predicate": {
+        "blocking": 1
+      }
+    }
+  ],
+  "textures": {
+    "particle": "#shield",
+    "shield": "variantshields:item/cherry_stone_shield"
+  }
+}

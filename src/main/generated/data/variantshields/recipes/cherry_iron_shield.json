@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "minecraft:cherry_planks"
+    }
+  },
+  "pattern": [
+    "WIW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:cherry_iron_shield"
+  },
+  "show_notification": true
+}

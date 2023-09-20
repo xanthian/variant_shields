@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "variantshields:cherry_golden_shield",
+    "variantshields:birch_golden_shield",
+    "variantshields:dark_oak_golden_shield",
+    "variantshields:jungle_golden_shield",
+    "variantshields:mangrove_golden_shield",
+    "variantshields:spruce_golden_shield",
+    "variantshields:acacia_golden_shield",
+    "variantshields:bamboo_golden_shield",
+    "variantshields:crimson_golden_shield",
+    "variantshields:oak_golden_shield",
+    "variantshields:warped_golden_shield"
+  ]
+}

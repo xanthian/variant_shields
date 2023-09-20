@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "W": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "pattern": [
+    "WIW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:oak_iron_shield"
+  },
+  "show_notification": true
+}

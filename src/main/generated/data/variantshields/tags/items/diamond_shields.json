@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "variantshields:bamboo_diamond_shield",
+    "variantshields:warped_diamond_shield",
+    "variantshields:mangrove_diamond_shield",
+    "variantshields:acacia_diamond_shield",
+    "variantshields:cherry_diamond_shield",
+    "variantshields:birch_diamond_shield",
+    "variantshields:jungle_diamond_shield",
+    "variantshields:spruce_diamond_shield",
+    "variantshields:oak_diamond_shield",
+    "variantshields:dark_oak_diamond_shield",
+    "variantshields:crimson_diamond_shield"
+  ]
+}

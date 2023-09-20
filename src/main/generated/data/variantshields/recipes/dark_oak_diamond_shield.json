@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "W": {
+      "item": "minecraft:dark_oak_planks"
+    }
+  },
+  "pattern": [
+    "WDW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:dark_oak_diamond_shield"
+  },
+  "show_notification": true
+}

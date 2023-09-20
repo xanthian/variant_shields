@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "variantshields:dark_oak_netherite_shield",
+    "variantshields:jungle_netherite_shield",
+    "variantshields:spruce_netherite_shield",
+    "variantshields:crimson_netherite_shield",
+    "variantshields:mangrove_netherite_shield",
+    "variantshields:acacia_netherite_shield",
+    "variantshields:oak_netherite_shield",
+    "variantshields:bamboo_netherite_shield",
+    "variantshields:warped_netherite_shield",
+    "variantshields:birch_netherite_shield",
+    "variantshields:cherry_netherite_shield"
+  ]
+}

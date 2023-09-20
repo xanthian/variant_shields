@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "variantshields:birch_iron_shield",
+    "variantshields:bamboo_iron_shield",
+    "variantshields:spruce_iron_shield",
+    "variantshields:dark_oak_iron_shield",
+    "variantshields:jungle_iron_shield",
+    "variantshields:acacia_iron_shield",
+    "variantshields:warped_iron_shield",
+    "variantshields:cherry_iron_shield",
+    "variantshields:oak_iron_shield",
+    "variantshields:mangrove_iron_shield",
+    "variantshields:crimson_iron_shield"
+  ]
+}

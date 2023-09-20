@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "variantshields:iron_shields"
+    }
+  ],
+  "result": {
+    "item": "minecraft:shield"
+  }
+}

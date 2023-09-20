@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "W": {
+      "item": "minecraft:jungle_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " W "
+  ],
+  "result": {
+    "item": "variantshields:jungle_wood_shield"
+  },
+  "show_notification": true
+}

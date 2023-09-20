@@ -1,0 +1,8 @@
+{
+  "parent": "variantshields:item/variant_shield_blocking",
+  "gui_light": "front",
+  "textures": {
+    "particle": "variantshields:item/spruce_stone_shield",
+    "shield": "variantshields:item/spruce_stone_shield"
+  }
+}
