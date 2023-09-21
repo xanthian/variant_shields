@@ -14,15 +14,13 @@ import net.minecraft.util.Identifier;
 import net.xanthian.variantshields.shields.Shields;
 import net.xanthian.variantshields.util.ModItemTags;
 
-import java.util.function.Consumer;
-
 public class ModRecipeGenerator extends FabricRecipeProvider {
     public ModRecipeGenerator(FabricDataOutput output) {
         super(output);
     }
 
     @Override
-    public void generate(Consumer<RecipeJsonProvider> exporter) {
+    public void generate(RecipeExporter exporter) {
 
 
         offerWoodenShieldRecipe(exporter, Shields.ACACIA_WOOD_SHIELD, Items.ACACIA_PLANKS);
@@ -106,14 +104,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeGenerator.offerUncraftingRecipe(exporter, RecipeCategory.DECORATIONS, ModItemTags.IRON_SHIELDS, Items.SHIELD);
     }
 
-    public static void offerWoodenShieldRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shield, ItemConvertible plank) {
+    public static void offerWoodenShieldRecipe(RecipeExporter exporter, ItemConvertible shield, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, shield)
                 .input('W', plank)
                 .pattern("WWW").pattern("WWW").pattern(" W ")
                 .criterion("has_plank", VanillaRecipeProvider.conditionsFromItem(plank))
                 .offerTo(exporter);
     }
-    public static void offerStoneShieldRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shield, ItemConvertible plank) {
+    public static void offerStoneShieldRecipe(RecipeExporter exporter, ItemConvertible shield, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, shield)
                 .input('W', plank)
                 .input('S', Items.STONE)
@@ -121,7 +119,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_stone", VanillaRecipeProvider.conditionsFromItem(Items.STONE))
                 .offerTo(exporter);
     }
-    public static void offerIronShieldRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shield, ItemConvertible plank) {
+    public static void offerIronShieldRecipe(RecipeExporter exporter, ItemConvertible shield, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, shield)
                 .input('W', plank)
                 .input('I', Items.IRON_INGOT)
@@ -129,7 +127,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_iron_ingot", VanillaRecipeProvider.conditionsFromItem(Items.IRON_INGOT))
                 .offerTo(exporter);
     }
-    public static void offerGoldenShieldRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shield, ItemConvertible plank) {
+    public static void offerGoldenShieldRecipe(RecipeExporter exporter, ItemConvertible shield, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, shield)
                 .input('W', plank)
                 .input('G', Items.GOLD_INGOT)
@@ -137,7 +135,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_gold_ingot", VanillaRecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter);
     }
-    public static void offerDiamondShieldRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible shield, ItemConvertible plank) {
+    public static void offerDiamondShieldRecipe(RecipeExporter exporter, ItemConvertible shield, ItemConvertible plank) {
         ShapedRecipeJsonBuilder.create(RecipeCategory.COMBAT, shield)
                 .input('W', plank)
                 .input('D', Items.DIAMOND)
@@ -145,12 +143,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion("has_diamond", VanillaRecipeProvider.conditionsFromItem(Items.DIAMOND))
                 .offerTo(exporter);
     }
-    public static void offerNetheriteShieldRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible diamondShield, Item shield) {
+    public static void offerNetheriteShieldRecipe(RecipeExporter exporter, ItemConvertible diamondShield, Item shield) {
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(diamondShield), Ingredient.ofItems(Items.NETHERITE_INGOT), RecipeCategory.COMBAT, shield)
                 .criterion("has_netherite_ingot", VanillaRecipeProvider.conditionsFromItem(Items.NETHERITE_INGOT))
                 .offerTo(exporter, FabricRecipeProvider.getItemPath(shield) + "_smithing");
     }
-    public static void offerUncraftingRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, TagKey<Item> input, ItemConvertible output) {
+    public static void offerUncraftingRecipe(RecipeExporter exporter, RecipeCategory category, TagKey<Item> input, ItemConvertible output) {
         ShapelessRecipeJsonBuilder.create(category, output, 1)
                 .input(input)
                 .criterion("has_variant_item", InventoryChangedCriterion.Conditions.items(output))
