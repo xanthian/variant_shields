@@ -2,6 +2,7 @@ package net.xanthian.variantshields.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.data.server.recipe.*;
 import net.minecraft.item.Item;
@@ -11,6 +12,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.tag.TagKey;
 import net.minecraft.util.Identifier;
+
 import net.xanthian.variantshields.shields.Shields;
 import net.xanthian.variantshields.util.ModItemTags;
 
@@ -23,7 +25,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
-
 
         offerWoodenShieldRecipe(exporter, Shields.ACACIA_WOOD_SHIELD, Items.ACACIA_PLANKS);
         offerStoneShieldRecipe(exporter, Shields.ACACIA_STONE_SHIELD, Items.ACACIA_PLANKS);
@@ -84,7 +85,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerWoodenShieldRecipe(exporter, Shields.OAK_WOOD_SHIELD, Items.OAK_PLANKS);
         offerStoneShieldRecipe(exporter, Shields.OAK_STONE_SHIELD, Items.OAK_PLANKS);
         offerGoldenShieldRecipe(exporter, Shields.OAK_GOLDEN_SHIELD, Items.OAK_PLANKS);
-        offerIronShieldRecipe(exporter, Shields.OAK_IRON_SHIELD, Items.OAK_PLANKS);
+        //offerIronShieldRecipe(exporter, Shields.OAK_IRON_SHIELD, Items.OAK_PLANKS);
         offerDiamondShieldRecipe(exporter, Shields.OAK_DIAMOND_SHIELD, Items.OAK_PLANKS);
         offerNetheriteShieldRecipe(exporter,Shields.OAK_DIAMOND_SHIELD,Shields.OAK_NETHERITE_SHIELD);
 

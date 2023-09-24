@@ -1,8 +1,0 @@
-{
-  "parent": "variantshields:item/variant_shield_blocking",
-  "gui_light": "front",
-  "textures": {
-    "particle": "variantshields:item/oak_iron_shield",
-    "shield": "variantshields:item/oak_iron_shield"
-  }
-}

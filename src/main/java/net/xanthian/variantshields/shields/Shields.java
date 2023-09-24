@@ -1,10 +1,12 @@
 package net.xanthian.variantshields.shields;
 
 import com.google.common.collect.Maps;
+
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+
 import net.xanthian.variantshields.Initialise;
 import net.xanthian.variantshields.materials.ModShieldMaterial;
 
@@ -52,7 +54,6 @@ public class Shields {
     public static final Item DARK_OAK_IRON_SHIELD = registerIronShield("dark_oak_iron_shield", new VariantShieldItem(ModShieldMaterial.IRON));
     public static final Item JUNGLE_IRON_SHIELD = registerIronShield("jungle_iron_shield", new VariantShieldItem(ModShieldMaterial.IRON));
     public static final Item MANGROVE_IRON_SHIELD = registerIronShield("mangrove_iron_shield", new VariantShieldItem(ModShieldMaterial.IRON));
-    public static final Item OAK_IRON_SHIELD = registerIronShield("oak_iron_shield", new VariantShieldItem(ModShieldMaterial.IRON));
     public static final Item SPRUCE_IRON_SHIELD = registerIronShield("spruce_iron_shield", new VariantShieldItem(ModShieldMaterial.IRON));
     public static final Item WARPED_IRON_SHIELD = registerIronShield("warped_iron_shield", new VariantShieldItem(ModShieldMaterial.IRON));
 
