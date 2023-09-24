@@ -82,7 +82,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerWoodenShieldRecipe(exporter, Shields.OAK_WOOD_SHIELD, Items.OAK_PLANKS);
         offerStoneShieldRecipe(exporter, Shields.OAK_STONE_SHIELD, Items.OAK_PLANKS);
         offerGoldenShieldRecipe(exporter, Shields.OAK_GOLDEN_SHIELD, Items.OAK_PLANKS);
-        offerIronShieldRecipe(exporter, Shields.OAK_IRON_SHIELD, Items.OAK_PLANKS);
+        //offerIronShieldRecipe(exporter, Shields.OAK_IRON_SHIELD, Items.OAK_PLANKS);
         offerDiamondShieldRecipe(exporter, Shields.OAK_DIAMOND_SHIELD, Items.OAK_PLANKS);
         offerNetheriteShieldRecipe(exporter,Shields.OAK_DIAMOND_SHIELD,Shields.OAK_NETHERITE_SHIELD);
 

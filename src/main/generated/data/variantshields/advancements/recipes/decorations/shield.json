@@ -22,8 +22,8 @@
   },
   "requirements": [
     [
-      "has_variant_item",
-      "has_the_recipe"
+      "has_the_recipe",
+      "has_variant_item"
     ]
   ],
   "rewards": {

@@ -49,7 +49,6 @@
   "item.variantshields.mangrove_wood_shield": "Mangrove Wood Shield",
   "item.variantshields.oak_diamond_shield": "Oak Diamond Shield",
   "item.variantshields.oak_golden_shield": "Oak Golden Shield",
-  "item.variantshields.oak_iron_shield": "Oak Iron Shield",
   "item.variantshields.oak_netherite_shield": "Oak Netherite Shield",
   "item.variantshields.oak_stone_shield": "Oak Stone Shield",
   "item.variantshields.oak_wood_shield": "Oak Wood Shield",
@@ -64,5 +63,8 @@
   "item.variantshields.warped_iron_shield": "Warped Iron Shield",
   "item.variantshields.warped_netherite_shield": "Warped Netherite Shield",
   "item.variantshields.warped_stone_shield": "Warped Stone Shield",
-  "item.variantshields.warped_wood_shield": "Warped Wood Shield"
+  "item.variantshields.warped_wood_shield": "Warped Wood Shield",
+  "variantshields.cooldown": "Cooldown",
+  "variantshields.item_group": "Variant Shields",
+  "variantshields.resourcepacks": "Rename Shield to Oak"
 }

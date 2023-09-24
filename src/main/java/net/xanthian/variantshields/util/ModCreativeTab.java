@@ -3,6 +3,7 @@ package net.xanthian.variantshields.util;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
@@ -17,7 +18,7 @@ public class ModCreativeTab {
             new Identifier(MOD_ID, "variantshields"),
 
             FabricItemGroup.builder()
-            .displayName(Text.literal("Variant Shields"))
+            .displayName(Text.translatable("variantshields.item_group"))
             .icon(() -> new ItemStack(Shields.MANGROVE_DIAMOND_SHIELD))
             .entries((context, entries) -> {
         entries.add(Shields.ACACIA_WOOD_SHIELD);
@@ -50,7 +51,8 @@ public class ModCreativeTab {
         entries.add(Shields.DARK_OAK_IRON_SHIELD);
         entries.add(Shields.JUNGLE_IRON_SHIELD);
         entries.add(Shields.MANGROVE_IRON_SHIELD);
-        entries.add(Shields.OAK_IRON_SHIELD);
+        entries.add(Items.SHIELD);
+        //entries.add(Shields.OAK_IRON_SHIELD);
         entries.add(Shields.SPRUCE_IRON_SHIELD);
         entries.add(Shields.WARPED_IRON_SHIELD);
         entries.add(Shields.ACACIA_GOLDEN_SHIELD);

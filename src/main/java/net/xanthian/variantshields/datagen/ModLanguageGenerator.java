@@ -17,6 +17,10 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         for (Item item : Shields.MOD_SHIELDS_ALL.values()) {
             translationBuilder.add(item, generateItemDisplayName(item));
         }
+
+        translationBuilder.add("variantshields.resourcepacks", "Rename Shield to Oak");
+        translationBuilder.add("variantshields.item_group", "Variant Shields");
+        translationBuilder.add("variantshields.cooldown", "Cooldown");
     }
 
     public static String generateItemDisplayName(Item item) {
