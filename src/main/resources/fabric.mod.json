@@ -2,25 +2,31 @@
   "schemaVersion": 1,
   "id": "variantshields",
   "version": "${version}",
-
   "name": "Variant Shields",
   "description": "Shields made from the various wood types (and tiered)",
-  "authors": ["Xanthian"],
+  "authors": [
+    "Xanthian"
+  ],
   "contact": {
     "sources": "https://github.com/xanthian/variantshields"
   },
-
   "license": "MIT",
   "icon": "assets/variantshields/icon.png",
-
   "environment": "*",
   "entrypoints": {
-    "main": ["net.xanthian.variantshields.Initialise"],
-    "fabric-datagen": ["net.xanthian.variantshields.DataGenInitialise"],
-    "client": ["net.xanthian.variantshields.ClientInitialise"]
+    "main": [
+      "net.xanthian.variantshields.Initialise"
+    ],
+    "fabric-datagen": [
+      "net.xanthian.variantshields.DataGenInitialise"
+    ],
+    "client": [
+      "net.xanthian.variantshields.ClientInitialise"
+    ]
   },
-  "mixins": ["variantshields.mixins.json"],
-
+  "mixins": [
+    "variantshields.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.14.20",
     "fabric": "*",

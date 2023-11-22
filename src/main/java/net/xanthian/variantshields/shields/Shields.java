@@ -1,15 +1,12 @@
 package net.xanthian.variantshields.shields;
 
 import com.google.common.collect.Maps;
-
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
-
 import net.xanthian.variantshields.Initialise;
 import net.xanthian.variantshields.materials.ModShieldMaterial;
-
 import java.util.Map;
 
 public class Shields {

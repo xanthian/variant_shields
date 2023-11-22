@@ -20,9 +20,9 @@ public class ModEntityAttributes {
         ATTRIBUTES.put("cooldown", SHIELD_COOLDOWN);
     }
 
-        public static void registerAttributes() {
-            for (Map.Entry<String, EntityAttribute> pair : ATTRIBUTES.entrySet()) {
-                Registry.register(Registries.ATTRIBUTE, Initialise.id(pair.getKey()), pair.getValue());
+    public static void registerAttributes() {
+        for (Map.Entry<String, EntityAttribute> pair : ATTRIBUTES.entrySet()) {
+            Registry.register(Registries.ATTRIBUTE, Initialise.id(pair.getKey()), pair.getValue());
         }
     }
 }

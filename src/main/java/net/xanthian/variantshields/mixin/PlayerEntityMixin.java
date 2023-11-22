@@ -20,7 +20,9 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(PlayerEntity.class)
 public abstract class PlayerEntityMixin extends LivingEntity {
 
-    @Shadow @Final private PlayerInventory inventory;
+    @Shadow
+    @Final
+    private PlayerInventory inventory;
 
     protected PlayerEntityMixin(EntityType<? extends LivingEntity> entityType, World world) {
         super(entityType, world);
@@ -28,19 +30,19 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 
     // Causes durability damage when wielding a variant shield
 
-    @WrapOperation(method = "damageShield", at = @At(value = "INVOKE",target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
+    @WrapOperation(method = "damageShield", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
     boolean vshields$damageShield(ItemStack itemStack, Item item, Operation<Boolean> original) {
         return original.call(itemStack, item) || itemStack.getItem() instanceof VariantShieldItem;
     }
 
     // Disables shield after axe attack
 
-    @Redirect(method = "disableShield", at = @At(value = "INVOKE",target = "Lnet/minecraft/entity/player/ItemCooldownManager;set(Lnet/minecraft/item/Item;I)V"))
+    @Redirect(method = "disableShield", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/ItemCooldownManager;set(Lnet/minecraft/item/Item;I)V"))
     public void disableShield(ItemCooldownManager instance, Item item, int duration) {
         Item activeItem = this.activeItemStack.getItem();
 
         if (activeItem instanceof VariantShieldItem) {
-            instance.set(activeItem, ((VariantShieldItem) activeItem).getCooldownTicks() );
+            instance.set(activeItem, ((VariantShieldItem) activeItem).getCooldownTicks());
 
             for (int i = 0; i < this.inventory.size(); i++) {
                 ItemStack stack = this.inventory.getStack(i);
