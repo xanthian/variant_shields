@@ -11,8 +11,7 @@ import java.util.Map;
 
 public class ModEntityAttributes {
 
-    public static final EntityAttribute SHIELD_COOLDOWN =
-            new ClampedEntityAttribute("variantshields.cooldown", 1.0, 0.0, 140.0).setTracked(true);
+    public static final EntityAttribute SHIELD_COOLDOWN = new ClampedEntityAttribute("variantshields.cooldown", 1.0, 0.0, 140.0).setTracked(true);
 
     public static Map<String, EntityAttribute> ATTRIBUTES = new LinkedHashMap<>();
 

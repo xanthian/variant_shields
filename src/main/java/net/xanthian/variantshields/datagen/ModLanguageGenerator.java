@@ -18,9 +18,7 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         String[] parts = itemName.split("_");
         StringBuilder displayName = new StringBuilder();
         for (String part : parts) {
-            displayName.append(Character.toUpperCase(part.charAt(0)))
-                    .append(part.substring(1))
-                    .append(" ");
+            displayName.append(Character.toUpperCase(part.charAt(0))).append(part.substring(1)).append(" ");
         }
         return displayName.toString().trim();
     }

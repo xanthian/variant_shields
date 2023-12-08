@@ -24,39 +24,31 @@ public class ModItemTagGenerator extends FabricTagProvider.ItemTagProvider {
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
         for (Item shields : Shields.MOD_SHIELDS_ALL.values()) {
-            getOrCreateTagBuilder(ModItemTags.SHIELDS)
-                    .add(shields);
-            getOrCreateTagBuilder(ORIGINS_SHIELDS)
-                    .add(shields);
+            getOrCreateTagBuilder(ModItemTags.SHIELDS).add(shields);
+            getOrCreateTagBuilder(ORIGINS_SHIELDS).add(shields);
         }
 
         for (Item shields : Shields.MOD_WOODEN_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.WOODEN_SHIELDS)
-                    .add(shields);
+            getOrCreateTagBuilder(ModItemTags.WOODEN_SHIELDS).add(shields);
         }
 
         for (Item shields : Shields.MOD_STONE_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.STONE_SHIELDS)
-                    .add(shields);
+            getOrCreateTagBuilder(ModItemTags.STONE_SHIELDS).add(shields);
         }
 
         for (Item shields : Shields.MOD_GOLDEN_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.GOLDEN_SHIELDS)
-                    .add(shields);
+            getOrCreateTagBuilder(ModItemTags.GOLDEN_SHIELDS).add(shields);
         }
 
         for (Item shields : Shields.MOD_IRON_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.IRON_SHIELDS)
-                    .add(shields);
+            getOrCreateTagBuilder(ModItemTags.IRON_SHIELDS).add(shields);
         }
         for (Item shields : Shields.MOD_DIAMOND_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.DIAMOND_SHIELDS)
-                    .add(shields);
+            getOrCreateTagBuilder(ModItemTags.DIAMOND_SHIELDS).add(shields);
         }
 
         for (Item shields : Shields.MOD_NETHERITE_SHIELDS.values()) {
-            getOrCreateTagBuilder(ModItemTags.NETHERITE_SHIELDS)
-                    .add(shields);
+            getOrCreateTagBuilder(ModItemTags.NETHERITE_SHIELDS).add(shields);
         }
     }
 }

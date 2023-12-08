@@ -35,24 +35,16 @@ public class VariantShieldItem extends ShieldItem {
 
         if (slot == EquipmentSlot.OFFHAND) {
             if (tier.getArmor() > 0) {
-                builder.put(EntityAttributes.GENERIC_ARMOR,
-                        new EntityAttributeModifier(ARMOR_MODIFIER, "Armor", tier.getArmor(),
-                                EntityAttributeModifier.Operation.ADDITION));
+                builder.put(EntityAttributes.GENERIC_ARMOR, new EntityAttributeModifier(ARMOR_MODIFIER, "Armor", tier.getArmor(), EntityAttributeModifier.Operation.ADDITION));
             }
             if (tier.getToughness() > 0) {
-                builder.put(EntityAttributes.GENERIC_ARMOR_TOUGHNESS,
-                        new EntityAttributeModifier(TOUGH_MODIFIER, "Toughness", tier.getToughness(),
-                                EntityAttributeModifier.Operation.ADDITION));
+                builder.put(EntityAttributes.GENERIC_ARMOR_TOUGHNESS, new EntityAttributeModifier(TOUGH_MODIFIER, "Toughness", tier.getToughness(), EntityAttributeModifier.Operation.ADDITION));
             }
             if (tier.getKnockbackRes() > 0) {
-                builder.put(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE,
-                        new EntityAttributeModifier(KNOCKBACK_MODIFIER, "Knockback", tier.getKnockbackRes(),
-                                EntityAttributeModifier.Operation.ADDITION));
+                builder.put(EntityAttributes.GENERIC_KNOCKBACK_RESISTANCE, new EntityAttributeModifier(KNOCKBACK_MODIFIER, "Knockback", tier.getKnockbackRes(), EntityAttributeModifier.Operation.ADDITION));
             }
             if (tier.getCooldownTicks() > 1) {
-                builder.put(ModEntityAttributes.SHIELD_COOLDOWN,
-                        new EntityAttributeModifier(SHIELD_COOLDOWN_MODIFIER, Text.translatable("variantshields.cooldown").getString(), tier.getCooldownTicks(),
-                                EntityAttributeModifier.Operation.ADDITION));
+                builder.put(ModEntityAttributes.SHIELD_COOLDOWN, new EntityAttributeModifier(SHIELD_COOLDOWN_MODIFIER, Text.translatable("variantshields.cooldown").getString(), tier.getCooldownTicks(), EntityAttributeModifier.Operation.ADDITION));
             }
             return builder.build();
         }

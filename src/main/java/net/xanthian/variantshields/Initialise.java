@@ -25,10 +25,6 @@ public class Initialise implements ModInitializer {
         ModCreativeTab.registerItemGroup();
         ModEntityAttributes.registerAttributes();
 
-        ResourceManagerHelper.registerBuiltinResourcePack(
-                new Identifier(MOD_ID, "minecraft"),
-                FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(),
-                Text.translatable("variantshields.resourcepacks"),
-                ResourcePackActivationType.ALWAYS_ENABLED);
+        ResourceManagerHelper.registerBuiltinResourcePack(new Identifier(MOD_ID, "minecraft"), FabricLoader.getInstance().getModContainer(MOD_ID).orElseThrow(), Text.translatable("variantshields.resourcepacks"), ResourcePackActivationType.ALWAYS_ENABLED);
     }
 }

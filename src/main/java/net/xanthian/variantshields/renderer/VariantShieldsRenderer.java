@@ -10,9 +10,6 @@ import net.minecraft.util.Identifier;
 public class VariantShieldsRenderer {
 
     public static void registerShieldPredicates(Item shield) {
-        ModelPredicateProviderRegistry.register(shield, new Identifier("blocking"),
-                (stack, world, entity, seed) -> entity != null && entity.isUsingItem()
-                        && entity.getActiveItem() == stack
-                        ? 1.0f : 0.0f);
+        ModelPredicateProviderRegistry.register(shield, new Identifier("blocking"), (stack, world, entity, seed) -> entity != null && entity.isUsingItem() && entity.getActiveItem() == stack ? 1.0f : 0.0f);
     }
 }
