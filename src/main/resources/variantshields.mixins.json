@@ -6,8 +6,7 @@
   "mixins": [
     "BindingCurseEnchantmentMixin",
     "MobEntityMixin",
-    "PlayerEntityMixin",
-    "RemoveOffHandItemTaskMixin"
+    "PlayerEntityMixin"
   ],
   "injectors": {
     "defaultRequire": 1

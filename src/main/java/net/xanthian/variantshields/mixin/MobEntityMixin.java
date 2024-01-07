@@ -18,14 +18,14 @@ public class MobEntityMixin {
 
     // Disables player shields if hit by an axe
 
-    @WrapOperation(method = "disablePlayerShield", at = @At(value = "INVOKE",target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
+    @WrapOperation(method = "disablePlayerShield", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;isOf(Lnet/minecraft/item/Item;)Z"))
     boolean vshields$disablePlayerShield(ItemStack itemStack, Item item, Operation<Boolean> original) {
         return original.call(itemStack, item) || itemStack.getItem() instanceof VariantShieldItem;
     }
 
     // Sets cooldown of shield based on material tier
 
-    @Redirect(method = "disablePlayerShield", at = @At(value = "INVOKE",target = "Lnet/minecraft/entity/player/ItemCooldownManager;set(Lnet/minecraft/item/Item;I)V"))
+    @Redirect(method = "disablePlayerShield", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/player/ItemCooldownManager;set(Lnet/minecraft/item/Item;I)V"))
     private void vshields$disablePlayerShield2(ItemCooldownManager itemCooldownManager, Item item, int duration, PlayerEntity player, ItemStack mobStack, ItemStack playerStack) {
         if (playerStack.getItem() instanceof ShieldItem) {
             itemCooldownManager.set(playerStack.getItem(), ((VariantShieldItem) playerStack.getItem()).getCooldownTicks());

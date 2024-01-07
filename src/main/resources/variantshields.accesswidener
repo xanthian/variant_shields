@@ -1,6 +1,0 @@
-accessWidener v2 named
-
-# NOTE: Mixin accessor for Record class does not work well
-#       It seems to need to use access widener
-# Credit to Aton-Kish, check out their Reinforced Barrels mod!
-accessible method net/minecraft/entity/mob/PiglinBrain consumeOffHandItem (Lnet/minecraft/entity/mob/PiglinEntity;Z)V
